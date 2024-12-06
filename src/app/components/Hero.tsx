@@ -16,7 +16,7 @@ export default function Hero() {
   return (
     <div className="px-36 py-[130px] bg-pink-100">
       <div className="flex items-center justify-between">
-        <div data-aos="fade-up" className="max-w-xl">
+        <div data-aos="zoom-in" className="max-w-xl">
           <h1 className="text-[50px] font-bold">
             Hello!, I&apos;m Evangeline Keyziandira Arizona
           </h1>
@@ -25,7 +25,7 @@ export default function Hero() {
             Let&apos;s Talk
         </button>
         </div>
-        <div data-aos="fade-up" className="overflow-hidden rounded-full w-72 h-72">
+        <div data-aos="zoom-in" className="overflow-hidden animate-bounce rounded-full w-72 h-72">
           <Image
             src={HeroPict}
             alt="Profile Picture"
