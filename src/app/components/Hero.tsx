@@ -20,8 +20,8 @@ export default function Hero() {
           <h1 className="text-[50px] font-bold">
             Hello!, I&apos;m Evangeline Keyziandira Arizona
           </h1>
-          <p className="mt-5 text-lg">From SMK Telkom Malang, I really like traditional dance</p>
-        <button className="mt-5 px-6 py-3 text-white bg-pink-500 duration-200 rounded-full hover:bg-pink-600">
+          <p className="mt-5 text-lg">From SMK Telkom Malang, I really like traditional dance.</p>
+        <button className="mt-5 px-6 py-3 text-white bg-pink-500 duration-200 rounded-full hover:bg-pink-600 shadow-lg hover:scale-110 shadow-pink-400">
             Let&apos;s Talk
         </button>
         </div>

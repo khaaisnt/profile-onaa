@@ -26,7 +26,7 @@ export default function Quote() {
                     </svg>
                     <blockquote>
                         <p className="text-2xl italic font-medium">
-                            &quot;Sekirane Ora Nggarai Melbu Suwargo Gausah Dipikir&quot;
+                            &quot;Urip iku akeh cobaan. Yen akeh saweran iku jenenge dangdutan&quot;
                         </p>
                     </blockquote>
                     <figcaption className="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
