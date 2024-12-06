@@ -1,9 +1,19 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Mail() {
+    useEffect(() => {
+        AOS.init({
+        disable: "phone",
+        duration: 700,
+        easing: "ease-out-cubic",
+        });
+    }, []);
   return (
     <>
-      <div className="py-20">
+      <div data-aos="fade-up" className="py-20">
         <h1 className="text-center text-5xl font-bold">
           Get In Touch With Me!
         </h1>

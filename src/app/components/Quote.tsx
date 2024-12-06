@@ -1,10 +1,20 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Quote() {
+    useEffect(() => {
+        AOS.init({
+            disable: "phone",
+            duration: 700,
+            easing: "ease-out-cubic",
+        });
+    }, []);
     return (
         <>
             <div className="bg-pink-100 py-20 text-black">
-                <figure className="max-w-screen-md mx-auto text-center">
+                <figure data-aos="zoom-in" className="max-w-screen-md mx-auto text-center">
                     <svg
                         className="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600"
                         aria-hidden="true"

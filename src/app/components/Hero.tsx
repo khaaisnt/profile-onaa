@@ -1,12 +1,22 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import HeroPict from "../../../public/pict-hero.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Hero() {
+    useEffect(() => {
+        AOS.init({
+          disable: "phone",
+          duration: 700,
+          easing: "ease-out-cubic",
+        });
+      }, []);
   return (
     <div className="px-36 py-[130px] bg-pink-100">
       <div className="flex items-center justify-between">
-        <div className="max-w-xl">
+        <div data-aos="fade-up" className="max-w-xl">
           <h1 className="text-[50px] font-bold">
             Hello!, I&apos;m Evangeline Keyziandira Arizona
           </h1>
@@ -15,7 +25,7 @@ export default function Hero() {
             Let&apos;s Talk
         </button>
         </div>
-        <div className="overflow-hidden animate-bounce rounded-full w-72 h-72">
+        <div data-aos="fade-up" className="overflow-hidden rounded-full w-72 h-72">
           <Image
             src={HeroPict}
             alt="Profile Picture"
